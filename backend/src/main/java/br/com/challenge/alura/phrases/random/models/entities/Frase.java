@@ -30,6 +30,27 @@ public class Frase {
 		this.poster = "";
 	}
 
+	public Frase(final String titulo,
+				 final String personagem,
+				 final String poster) {
+		this.titulo = titulo;
+		this.frase = "";
+		this.personagem = personagem;
+		this.poster = poster;
+		this.id = 0L;
+	}
+
+	public Frase(final String titulo,
+				 final String frase,
+				 final String personagem,
+				 final String poster) {
+		this.poster = poster;
+		this.personagem = personagem;
+		this.frase = frase;
+		this.titulo = titulo;
+		this.id = 0L;
+	}
+
 	public Frase(final Long id,
 				 final String titulo,
 				 final String frase,
