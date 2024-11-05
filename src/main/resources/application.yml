@@ -1,0 +1,8 @@
+application:
+  title: 'Challenge Random Phrases Generator - ALURA ONE G7'
+  version: '1.0.0-SNAPSHOT'
+  since: 'Tuesday, 5th November 2024'
+
+spring:
+  profiles:
+    active: test # 'prod'

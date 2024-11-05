@@ -1,0 +1,11 @@
+spring:
+  datasource:
+    url: ${ POSTGRES_HOST }
+    username: ${ POSTGRES_USERNAME }
+    password: ${ POSTGRES_PASSWORD }
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+hibernate:
+  dialect: org.hibernate.dialect.HSQLDialect
