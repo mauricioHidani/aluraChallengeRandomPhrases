@@ -6,3 +6,12 @@ application:
 spring:
   profiles:
     active: test # 'prod'
+
+openai:
+  config:
+    apiKey: ${ OPENAI_API_KEY }
+
+omdb:
+  config:
+    apiKey: ${ OMDB_API_KEY }
+    uri: 'https://www.omdbapi.com'
