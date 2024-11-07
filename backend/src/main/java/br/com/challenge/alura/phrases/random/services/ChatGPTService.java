@@ -30,11 +30,11 @@ public class ChatGPTService {
 	 * @since Tuesday, 5th November 2024
 	 * */
 	public String generatePhraseByPerson(Frase frase) {
-		final var promptReq = "Me mostre uma frase dita pelo(a) personagem %s da série %s, trazendo apenas a frase em protuguês BR sem precisar explicar seu significado."
+		final var promptReq = "Me mostre uma frase clássica dita pelo(a) personagem %s da série ou filme %s, trazendo apenas a frase em protuguês BR sem precisar explicar seu significado."
 				.formatted(frase.personagem(), frase.titulo());
 
 		try {
-			return generateByOpenAI(promptReq).replace("\n", "");
+			return generateByOpenAI(promptReq).replaceAll("[\n\"]", "");
 
 		} catch (Exception e) {
 			throw new InformationProcessingException(
@@ -53,11 +53,11 @@ public class ChatGPTService {
 	 * @since Tuesday, 5th November 2024
 	 * */
 	public List<String> generatePersonsBySeriesTitle(String title, Integer limit) {
-		final var prompt = "Liste os nomes completos dos %d principais personagens da série %s separados por virgula (,) em uma única linha"
+		final var prompt = "Liste os nomes completos de %d personagens da série ou filme %s separados por virgula (,) em uma única linha"
 				.formatted(limit, title);
 		try {
 			final String generated = generateByOpenAI(prompt);
-			return Arrays.stream(generated.replace("\n", "").split(", ")).collect(Collectors.toList());
+			return Arrays.stream(generated.replaceAll("\n", "").split(", ")).collect(Collectors.toList());
 
 		} catch (Exception e) {
 			throw new InformationProcessingException(
