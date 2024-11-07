@@ -16,18 +16,16 @@
       <img src="./img/logo.png" alt="Logo ScreenMatch">
     </div>  
     <div class="cabecalho__opcoes">
-      <h1>Frases clássicas de filmes e séries</h1>
+      <h1>Gerar frases de séries</h1>
+    </div>
   </header>
   <main class="ficha">
-    <h1 class="title">Frases imperdíveis de séries...</h1>
-    <div class="ficha-descricao" id="ficha-descricao">
-      <!-- As informações serão inseridas aqui -->        
-    </div>
-    <div class="botoes">
-      <a href="./gerar-frases.html" class="link-gerar-frases">Gerar mais frases</a>
-      <div class="btn-sortear">Ver outras frases...</div>
-    </div>
+    <input type="text" id="input-title" class="input" placeholder="Titulo da série" />
+    <input type="number" id="input-limite" class="input" min="1" max="10" placeholder="Limite de personagens" />
+    <button type="button" id="btn-gerar-frases" class="button">Gerar frases</button>
+
+    <div id="content" class="ficha-descricao"></div>
   </main>
-  <script src="./scripts/index.js" type="module"></script>  
+  <script src="./scripts/gerarFrases.js" type="module"></script>
 </body>
 </html>
