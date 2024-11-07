@@ -11,7 +11,6 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   padding: 5em;
-  height: 100vh;
   min-height: 100vh;
   font-family: 'Inter', sans-serif;
   color: white;
@@ -82,16 +81,34 @@ p {
   font-size: 22px;
 }
 
-.btn-sortear{
+ul {
+  list-style: none;
+}
+
+.input {
+  margin: .52rem;
   border-radius: 24px;
   border: none;
   outline: none;
-  width: 10%;
+  width: 24%;
   font-size: 24px;
   padding: 0 1em;
-  margin-bottom: 1em;
+  background-color: #dee1e4;
+  font-size: 3vh;
+  line-height: 8vh;
+}
+
+.button {
+  margin: .52rem;
+  border-radius: 24px;
+  border: none;
+  outline: none;
+  width: 24%;
+  font-size: 24px;
+  padding: 0 1em;
   background-color: #0077b6;
-  bottom: 0;
+  font-size: 3vh;
+  line-height: 8vh;
   color: white;
   cursor: pointer;
   font-size: 3vh;
@@ -99,7 +116,40 @@ p {
   position: absolute;
   text-align: center;
   transition: .3s;
-  width: 90%;
+}
+
+.botoes {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3em;
+}
+
+.btn-sortear {
+  border-radius: 24px;
+  border: none;
+  outline: none;
+  padding: 0 1em;
+  background-color: #0077b6;
+  bottom: 0;
+  color: white;
+  cursor: pointer;
+  font-size: 3vh;
+  line-height: 8vh;
+  text-align: center;
+  transition: .3s;
+}
+
+.link-gerar-frases {
+  background-color: #0077b6;
+  border-radius: 24px;
+  padding: 0 1em;
+  font-size: 24px;
+  text-decoration: none;
+  color: white;
+  font-size: 3vh;
+  line-height: 8vh;
+  text-align: center;
+  transition: .3s;
 }
 
 @media screen and (max-width: 900px) {
