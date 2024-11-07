@@ -61,6 +61,9 @@ public class FraseService {
 					"Não foi possivel encontrar a série com o titulo (%s) informado.".formatted(title)
 				);
 			}
+		} else {
+			final var serieFounded = founded.get();
+			serie = Optional.of( new OMDBSerieDTO(serieFounded.titulo(), serieFounded.poster()) );
 		}
 
 		final var persons = gptService.generatePersonsBySeriesTitle(title, limit);
