@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>ScreenMatch - Frases famosas de séries</title>
+</head>
+<body>
+  <header class="cabecalho">
+    <div class="cabecalho__logo">
+      <img src="./img/logo.png" alt="Logo ScreenMatch">
+    </div>  
+    <div class="cabecalho__opcoes">
+      <h1>Gerar frases de séries</h1>
+    </div>
+  </header>
+  <main class="ficha">
+    <input type="text" id="input-title" class="input" placeholder="Titulo da série" />
+    <input type="number" id="input-limite" class="input" min="1" max="10" placeholder="Limite de personagens" />
+    <button type="button" id="btn-gerar-frases" class="button">Gerar frases</button>
+
+    <div id="content" class="ficha-descricao"></div>
+  </main>
+  <script src="./scripts/gerarFrases.js" type="module"></script>
+</body>
+</html>
