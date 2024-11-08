@@ -1,6 +1,6 @@
 # Desafio Frases Aleatórias
 🚩Java e Orientação a Objetos G7 - ONE<br>
-📅23 de outubro de 2024 - 📍São Paulo, Brasil<br>
+📅5 de novembro de 2024 - 📍São Paulo, Brasil<br>
 🌎[@Alura](https://www.alura.com.br/) | [@One](https://www.oracle.com/br/)<br>
 
 ![283493070-a4597a93-d8de-43d8-974d-2f4e274e336c](https://github.com/user-attachments/assets/7138967f-646d-4d2a-b84e-63969b34bd9a)
