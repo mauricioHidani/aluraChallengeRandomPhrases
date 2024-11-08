@@ -41,6 +41,13 @@ omdb:
     apiKey: COLOQUE_AQUI_A_CHAVE_DA_OMDB
 ```
 
+A aplicação também esta utilizando dois perfis de ambiente `prod` e `test`, onde basicamente o ambiente `prod` utiliza do SGBD _Postgres_ e o de `test` utiliza o banco de dados em memória _H2_. Para conseguir modificar o Perfil/Profile, é possivel encontrar essa configuração em `./backend/src/main/resources/application.yml`:
+```yaml
+spring:
+  profiles:
+    active: MODIFIQUE_AQUI # prod ou test
+```
+
 ## Descrição
 **Tela Frases Aleatórias**
 
